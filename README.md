@@ -35,7 +35,10 @@ Find spelling errors, code errors or have a suggestion?  [Raise an issue](- A Gi
 
 ### 🌟 Special thanks
 Special thanks to course authors
-[**add**](https://telescope.epam.com/who/ )  
-[**add**](https://telescope.epam.com/who/ )   
-[**add**](https://telescope.epam.com/who/ )  
-[**add**](https://telescope.epam.com/who/ )
+[**Igor Sheremetov**](https://telescope.epam.com/who/Igor_Sheremetov )  
+[**Zhanna Zamsha**](https://telescope.epam.com/who/Zhanna_Zamsha )   
+[**Ala Ropat**](https://telescope.epam.com/who/Ala_Ropat )
+[**Natig Kurbanov**](https://telescope.epam.com/who/Natig_Kurbanov )  
+[**Tornike Jijelava**](https://telescope.epam.com/who/Tornike_Jijelava )
+[**Pavel Liakh**](https://telescope.epam.com/who/Pavel_Liakh )
+[**Kseniya Yudzichava**](https://telescope.epam.com/who/Kseniya_Yudzichava )
