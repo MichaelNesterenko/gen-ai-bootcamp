@@ -9,11 +9,11 @@
 
 ### Open "Lab1" Project
 
-Open the "Lab1" project located in the [`tasks/lab1` folder](tasks/lab1) of your course materials. This project contains the initial setup required for this task, including the necessary project configuration and dependencies.
+Open the "Lab1" project located in the [`tasks/lab1` folder](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/tree/main/gen-ai-bootcamp/tasks/lab1/gen_ai_training) of your course materials. This project contains the initial setup required for this task, including the necessary project configuration and dependencies.
 
 ### Configure the Application:
 
-You'll need to configure the [application](tasks/lab1/gen_ai_training) to use the Azure OpenAI chat completion service. You can do this by adding the following settings to the [application.properties](file:tasks/lab1/gen_ai_training/src/main/resources/config/application.properties) file:
+You'll need to configure the [application](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/tree/main/gen-ai-bootcamp/tasks/lab1/gen_ai_training) to use the Azure OpenAI chat completion service. You can do this by adding the following settings to the [application.properties](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/blob/main/gen-ai-bootcamp/tasks/lab1/gen_ai_training/src/main/resources/config/application.properties) file:
 
 ```yaml
 client-azureopenai-key: your-key
