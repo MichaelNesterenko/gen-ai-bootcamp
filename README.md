@@ -23,22 +23,22 @@ Find spelling errors, code errors or have a suggestion?  [Raise an issue](- A Gi
 - A written task located in the README
 - Links to extra resources to continue your learning, with a focus on Java resources
 ## 🗃️ Lessons
-|  | Lesson Link | Description | Additional Learning  |
-| :--: | :--- | :--- | :--: |
-| 00 | [Course Setup](materials/00-course-setup/README.md) | **Learn:** How to Setup Your Java Development Environment  | [Learn More](https://docs.oracle.com/en/java/javase/17/install/installation-jdk-microsoft-windows-platforms.html#GUID-A7E27B90-A28D-4237-9383-A58B416071CA) |
-| 01 | [Introduction to Generative AI, LLMs and Semantic Kernel](materials/01-genai-basic/) | **Learn:** Understanding what Generative AI is and how Large Language Models (LLMs) work.<br/>**Build:** First application with Semantic Kernel in Java | [Learn More](https://learn.microsoft.com/en-us/collections/zk25b3g6n6ko14) |
-| 02 | [Prompt Engineering Fundamentals](materials/02-prompt-engineering/) | **Learn:** Hands-on Prompt Engineering Best Practices<br/>**Build:** Parametrized Prompts in Java | [Learn More](https://learn.microsoft.com/en-us/collections/zk25b3g6n6ko14) |
-| 03 | [Work with Different Models](materials/03-work-with-different-models/) | **Learn:** How to work with different models from Semantic Kernel<br/>**Build:** Application that uses model from Hagging Face using Java  | [Learn More](https://learn.microsoft.com/en-us/collections/zk25b3g6n6ko14) |
-| 04 | [Code Organization Approaches](materials/04-project-organization/) | **Learn:** How to use <br/>**Build:** Application that uses built-in Semantic Kernel plugins in Java | [Learn More](https://learn.microsoft.com/en-us/collections/zk25b3g6n6ko14) |
-| 05 | [Vector Databases](materials/05-embeddings/) | **Learn:** What are embeddings.<br/>**Build:** Java application that generates and persists embeddings from document  | [Learn More](https://learn.microsoft.com/en-us/collections/zk25b3g6n6ko14) |
-| 06 | [Retrieval-Augmented Generation](materials/06-retrieval-augmented-generation/) | **Build:** Retrieval-Augmented Generation Application in Java | [Learn More](https://learn.microsoft.com/en-us/collections/zk25b3g6n6ko14) |
+|    | Lesson Link                                                                                                        | Description                                                                                                                                             |                                                                     Additional Learning                                                                     |
+|:--:|:-------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| 00 | [Course Setup](materials/00-course-setup/README.md)                                                                | **Learn:** How to Setup Your Java Development Environment                                                                                               | [Learn More](https://docs.oracle.com/en/java/javase/17/install/installation-jdk-microsoft-windows-platforms.html#GUID-A7E27B90-A28D-4237-9383-A58B416071CA) |
+| 01 | [Introduction to Generative AI, LLMs and Semantic Kernel](materials/01-genai-basic/01_materials.md)                | **Learn:** Understanding what Generative AI is and how Large Language Models (LLMs) work.<br/>**Build:** First application with Semantic Kernel in Java |                                              [Learn More](materials/01-genai-basic/03_additional_materials.md)                                              |
+| 02 | [Prompt Engineering Fundamentals](materials/02-prompt-engineering/)                                                | **Learn:** Hands-on Prompt Engineering Best Practices<br/>**Build:** Parametrized Prompts in Java                                                       |                                         [Learn More](https://learn.microsoft.com/en-us/collections/zk25b3g6n6ko14)                                          |
+| 03 | [Work with Different Models](materials/03-work-with-different-models/)                                             | **Learn:** How to work with different models from Semantic Kernel<br/>**Build:** Application that uses model from Hagging Face using Java               |                                         [Learn More](https://learn.microsoft.com/en-us/collections/zk25b3g6n6ko14)                                          |
+| 04 | [Code Organization Approaches](materials/04-project-organization/)                                                 | **Learn:** How to use <br/>**Build:** Application that uses built-in Semantic Kernel plugins in Java                                                    |                                         [Learn More](https://learn.microsoft.com/en-us/collections/zk25b3g6n6ko14)                                          |
+| 05 | [Vector Databases](materials/05-embeddings/)                                                                       | **Learn:** What are embeddings.<br/>**Build:** Java application that generates and persists embeddings from document                                    |                                         [Learn More](https://learn.microsoft.com/en-us/collections/zk25b3g6n6ko14)                                          |
+| 06 | [Retrieval-Augmented Generation](materials/06-retrieval-augmented-generation/)                                     | **Build:** Retrieval-Augmented Generation Application in Java                                                                                           |                                         [Learn More](https://learn.microsoft.com/en-us/collections/zk25b3g6n6ko14)                                          |
 
 ### 🌟 Special thanks
-Special thanks to course authors
-[**Igor Sheremetov**](https://telescope.epam.com/who/Igor_Sheremetov )  
-[**Zhanna Zamsha**](https://telescope.epam.com/who/Zhanna_Zamsha )   
-[**Ala Ropat**](https://telescope.epam.com/who/Ala_Ropat )
-[**Natig Kurbanov**](https://telescope.epam.com/who/Natig_Kurbanov )  
-[**Tornike Jijelava**](https://telescope.epam.com/who/Tornike_Jijelava )
-[**Pavel Liakh**](https://telescope.epam.com/who/Pavel_Liakh )
+Special thanks to course authors<br/>
+[**Igor Sheremetov**](https://telescope.epam.com/who/Igor_Sheremetov )  <br/>
+[**Zhanna Zamsha**](https://telescope.epam.com/who/Zhanna_Zamsha )   <br/>
+[**Ala Ropat**](https://telescope.epam.com/who/Ala_Ropat )<br/>
+[**Natig Kurbanov**](https://telescope.epam.com/who/Natig_Kurbanov ) <br/> 
+[**Tornike Jijelava**](https://telescope.epam.com/who/Tornike_Jijelava )<br/>
+[**Pavel Liakh**](https://telescope.epam.com/who/Pavel_Liakh )<br/>
 [**Kseniya Yudzichava**](https://telescope.epam.com/who/Kseniya_Yudzichava )
