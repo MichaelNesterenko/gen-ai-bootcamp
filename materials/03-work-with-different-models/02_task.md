@@ -46,19 +46,19 @@ Modify the application to use the Semantic Kernel to generate images using Image
 
 ### Evaluation Criteria
 
-1. CConfiguration for Different Models (30%)
-- Correctly modified the application.properties file to change the deployment name for different models.
-- Successfully retrieved deployment names using the provided API.
+1. CConfiguration for Different Models
+- Correctly modified the application.properties file to change the deployment name for different models (15%)
+- Successfully retrieved deployment names using the provided API (15%)
 
-2. Implementation of Model Switching (30%)
-- Correctly implemented the logic to switch between different models based on the deployment name.
-- Ensured that the application can call different models from the Dial service.
+2. Implementation of Model Switching
+- Correctly implemented the logic to switch between different models based on the deployment name (15%)
+- Ensured that the application can call different models from the Dial service (15%)
 
-3. Comparison of Results (30%)
-- Compared results for the same prompts using different models.
-- Compared results using different PromptExecutionSettings.
-- Documented observations and differences in the results.
+3. Comparison of Results
+- Compared results for the same prompts using different models (10%)
+- Compared results using different PromptExecutionSettings (10%)
+- Documented observations and differences in the results (10%)
 
-4. Functionality Testing (10%)
-- Application runs without errors.
-- Responses are generated correctly and are relevant to the prompts.
+4. Functionality Testing
+- Application runs without errors (5%)
+- Responses are generated correctly and are relevant to the prompts (5%)

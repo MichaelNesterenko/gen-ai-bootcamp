@@ -44,32 +44,27 @@ Create a screenshot of the workflow showing the checks have passed and attach th
 
 ### Evaluation Criteria
 
-1. Configuration for Vector Database (20%)
-- Correctly configured the application to use a vector database (e.g., Postgres with pgvector plugin).
+1. Configuration for Vector Database
+- Correctly configured the application to use a vector database (e.g., Postgres with pgvector plugin) (15%)
 
-2. Build Embedding from Text (15%)
-- Implemented an endpoint to build an embedding from the provided text.
-- Verified that the endpoint correctly generates embeddings from text input.
+2. Build Embedding from Text
+- Implemented an endpoint to build an embedding from the provided text (15%)
 
-3. Build Embedding from PDF File (15%)
-- Implemented an endpoint to build an embedding from the provided PDF file.
-- Verified that the endpoint correctly generates embeddings from PDF input.
+3. Build Embedding from PDF File
+- Implemented an endpoint to build an embedding from the provided PDF file (15%)
 
-4. Build and Store Embedding from Text (15%)
-- Implemented an endpoint to build and store an embedding from the provided text.
-- Verified that the embedding is correctly stored in the vector database.
+4. Build and Store Embedding from Text
+- Implemented an endpoint to build and store an embedding from the provided text (15%)
 
-5. Build and Store Embedding from PDF File (15%)
-- Implemented an endpoint to build and store an embedding from the provided PDF file.
-- Verified that the embedding is correctly stored in the vector database.
+5. Build and Store Embedding from PDF File
+- Implemented an endpoint to build and store an embedding from the provided PDF file (15%)
 
-6. Search for Closest Embeddings (15%)
-- Implemented an endpoint to search for the closest embeddings in the database based on the input text.
-- Verified that the search functionality correctly identifies and returns the closest embeddings.
+6. Search for Closest Embeddings
+- Implemented an endpoint to search for the closest embeddings in the database based on the input text (15%)
 
-7. Functionality Testing (5%)
-- Application runs without errors.
-- Responses are generated correctly and are relevant to the prompts.
+7. Functionality Testing
+- Application runs without errors (5%)
+- Responses are generated correctly and are relevant to the prompts (5%)
 
 ## Self-Test Questions
 

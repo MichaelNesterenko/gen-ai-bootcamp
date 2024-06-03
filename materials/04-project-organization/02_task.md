@@ -65,23 +65,22 @@ Review plugins code from official [Semantic Kernel repository](https://github.co
 
 ### Evaluation Criteria
 
-1. Configuration for Azure OpenAI Chat Completion Service (20%)
-- Correctly modified the application.properties file to include the necessary settings for the Azure OpenAI chat completion service.
+1. Configuration for Azure OpenAI Chat Completion Service
+- Correctly modified the application.properties file to include the necessary settings for the Azure OpenAI chat completion service (10%)
 
-2. Integration of AgeCalculatorPlugin (20%)
-- Successfully integrated the AgeCalculatorPlugin into the existing system.
-- System accurately calculates and displays ages based on user-provided birth dates.
+2. Integration of AgeCalculatorPlugin
+- Successfully integrated the AgeCalculatorPlugin into the existing system (10%)
+- System accurately calculates and displays ages based on user-provided birth dates (10%)
 
-3. Integration of Wikipedia Search URL Function (20%)
-- Successfully integrated the getWikipediaSearchUrl function from the SearchUrlPlugin into the existing system.
-- System correctly generates and displays Wikipedia search URLs based on user input.
-- Validated that the chat history contains the URI for the "Europe" page on Wikipedia.
+3. Integration of Wikipedia Search URL Function
+- Successfully integrated the getWikipediaSearchUrl function from the SearchUrlPlugin into the existing system (10%)
+- System correctly generates and displays Wikipedia search URLs based on user input (10%)
+- Validated that the chat history contains the URI for the "Europe" page on Wikipedia (10%)
 
-4. Implementation and Integration of BingSearchUrl Function (20%)
-- Correctly implemented the BingSearchUrl function within the existing system.
-- System correctly generates and displays Bing search URLs based on user input.
-- Validated that the chat history contains the URI to review "cute kittens on vespas."
+4. Implementation and Integration of BingSearchUrl Function
+- Correctly implemented the BingSearchUrl function within the existing system (10%)
+- System correctly generates and displays Bing search URLs based on user input (10%)
 
-5. Functionality Testing (20%)
-- Application runs without errors.
-- Responses are generated correctly and are relevant to the prompts.
+5. Functionality Testing
+- Application runs without errors (10%)
+- Responses are generated correctly and are relevant to the prompts (10%)

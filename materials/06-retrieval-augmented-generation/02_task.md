@@ -21,14 +21,14 @@ Create a screenshot of the workflow showing the checks have passed and attach th
 
 ### Evaluation Criteria
 
-1. Document Upload Functionality (40%)
-- Implemented the ability to upload new documents (PDFs).
-- Verified that the uploaded documents are correctly processed and stored as knowledge sources.
+1. Document Upload Functionality
+- Implemented the ability to upload new documents (PDFs) (20%)
+- Verified that the uploaded documents are correctly processed and stored as knowledge sources (20%)
 
-2. Text Generation Based on Knowledge Sources (40%)
-- Implemented the ability to generate text based on the uploaded knowledge sources.
-- Verified that the generated text is relevant and accurate based on the knowledge sources.
+2. Text Generation Based on Knowledge Sources 
+- Implemented the ability to generate text based on the uploaded knowledge sources (20%)
+- Verified that the generated text is relevant and accurate based on the knowledge sources (20%)
 
-3. Functionality Testing (20%)
-- Application runs without errors.
-- Responses are generated correctly and are relevant to the prompts.
+3. Functionality Testing
+- Application runs without errors (10%)
+- Responses are generated correctly and are relevant to the prompts (10%)

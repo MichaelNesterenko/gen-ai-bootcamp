@@ -33,18 +33,18 @@ Create a screenshot of the workflow showing the checks have passed and attach th
 
 ### Evaluation Criteria
 
-1. Chat Service with System Prompt (40%)
-- Implemented a Chat Service that includes a system prompt.
-- Verified that the Chat Service correctly processes user requests and generates responses influenced by the system prompt.
+1. Chat Service with System Prompt
+- Implemented a Chat Service that includes a system prompt (20%)
+- Verified that the Chat Service correctly processes user requests and generates responses influenced by the system prompt (20%)
 
-2. Vector Database Support (30%)
-- Implemented vector database support for storing and retrieving embeddings.
-- Verified that the vector database integration works correctly and efficiently.
+2. Vector Database Support
+- Implemented vector database support for storing and retrieving embeddings (15%)
+- Verified that the vector database integration works correctly and efficiently (15%)
 
-3. Document Reader Service (20%)
-- Implemented a Document Reader Service that can read PDF documents.
-- Verified that the Document Reader Service can accurately answer questions about the content of the PDF documents.
+3. Document Reader Service
+- Implemented a Document Reader Service that can read PDF documents (10%)
+- Verified that the Document Reader Service can accurately answer questions about the content of the PDF documents (10%)
 
-4. Functionality Testing (10%)
-- Application runs without errors.
-- Responses are generated correctly and are relevant to the prompts.
+4. Functionality Testing
+- Application runs without errors (5%)
+- Responses are generated correctly and are relevant to the prompts (5%)

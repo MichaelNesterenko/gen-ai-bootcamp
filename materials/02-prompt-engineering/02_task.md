@@ -54,18 +54,18 @@ Create a pull request in your branch and check that the pipeline has passed.
 
 ### Evaluation Criteria
 
-1. Prompt Execution Settings Initialization (30%)
-- Correctly initialized PromptExecutionSettings with the specified settings.
-- Demonstrated understanding of the impact of changing the temperature value.
+1. Prompt Execution Settings Initialization
+- Correctly initialized PromptExecutionSettings with the specified settings (20%)
+- Demonstrated understanding of the impact of changing the temperature value (10%)
 
-2. ChatCompletionService and ChatHistory Initialization (30%)
-- Correctly initialized ChatCompletionService with the appropriate model and client.
-- Properly set up ChatHistory to store user and system messages.
+2. ChatCompletionService and ChatHistory Initialization
+- Correctly initialized ChatCompletionService with the appropriate model and client (15%)
+- Properly set up ChatHistory to store user and system messages (15%)
 
-3. Function Setup for Chatting with OpenAI (30%)
-- Correctly implemented the function to interact with OpenAI based on ChatHistory.
-- Validated the result and printed it to the console.
+3. Function Setup for Chatting with OpenAI
+- Correctly implemented the function to interact with OpenAI based on ChatHistory (20%)
+- Validated the result and printed it to the console (10%)
 
-4. Functionality Testing (10%)
-- Application runs without errors.
-- Responses are generated correctly and are relevant to the prompts.
+4. Functionality Testing
+- Application runs without errors (5%)
+- Responses are generated correctly and are relevant to the prompts (5%)
