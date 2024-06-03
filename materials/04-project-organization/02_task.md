@@ -62,3 +62,26 @@ Create a screenshot of the workflow showing the checks have passed and attach th
 
 ### Free practice:
 Review plugins code from official [Semantic Kernel repository](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Plugins), implement your own plugin and test it with your application.
+
+### Evaluation Criteria
+
+1. Configuration for Azure OpenAI Chat Completion Service (20%)
+- Correctly modified the application.properties file to include the necessary settings for the Azure OpenAI chat completion service.
+
+2. Integration of AgeCalculatorPlugin (20%)
+- Successfully integrated the AgeCalculatorPlugin into the existing system.
+- System accurately calculates and displays ages based on user-provided birth dates.
+
+3. Integration of Wikipedia Search URL Function (20%)
+- Successfully integrated the getWikipediaSearchUrl function from the SearchUrlPlugin into the existing system.
+- System correctly generates and displays Wikipedia search URLs based on user input.
+- Validated that the chat history contains the URI for the "Europe" page on Wikipedia.
+
+4. Implementation and Integration of BingSearchUrl Function (20%)
+- Correctly implemented the BingSearchUrl function within the existing system.
+- System correctly generates and displays Bing search URLs based on user input.
+- Validated that the chat history contains the URI to review "cute kittens on vespas."
+
+5. Functionality Testing (20%)
+- Application runs without errors.
+- Responses are generated correctly and are relevant to the prompts.

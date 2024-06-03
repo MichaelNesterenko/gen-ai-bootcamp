@@ -51,3 +51,21 @@ Validate the result and print it to the console.
 ### Closing
 
 Create a pull request in your branch and check that the pipeline has passed.  
+
+### Evaluation Criteria
+
+1. Prompt Execution Settings Initialization (30%)
+- Correctly initialized PromptExecutionSettings with the specified settings.
+- Demonstrated understanding of the impact of changing the temperature value.
+
+2. ChatCompletionService and ChatHistory Initialization (30%)
+- Correctly initialized ChatCompletionService with the appropriate model and client.
+- Properly set up ChatHistory to store user and system messages.
+
+3. Function Setup for Chatting with OpenAI (30%)
+- Correctly implemented the function to interact with OpenAI based on ChatHistory.
+- Validated the result and printed it to the console.
+
+4. Functionality Testing (10%)
+- Application runs without errors.
+- Responses are generated correctly and are relevant to the prompts.

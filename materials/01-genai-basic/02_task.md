@@ -42,3 +42,26 @@ Create a pull request in your branch and check that the pipeline has passed.
 Modify the application to use the Semantic Kernel to generate a response to a user prompt.
 You can play with different prompts and see how the Semantic Kernel responds to them. 
 Also you can try to use different settings for OpenAI chat completion service and see how it affects the generated responses.
+
+### Evaluation Criteria
+
+1. Configuration of Application Properties (20%)
+- Correctly added Azure OpenAI settings to application.properties file.
+- Values are placeholders and not hardcoded sensitive information.
+
+2. Controller Implementation (30%)
+- Controller correctly accepts a prompt as a request parameter.
+- Controller returns the response in the correct JSON format.
+- Proper handling of HTTP requests and responses.
+
+3. Usage of ChatRequestFunctionMessage (20%)
+- Correctly created an example of using ChatRequestFunctionMessage.
+- Validated the result and printed it to the console.
+
+4. Semantic Kernel Integration (20%)
+- Modified the application to use the Semantic Kernel for generating responses.
+- Demonstrated the ability to play with different prompts and settings.
+
+5. Functionality Testing (10%)
+- Application runs without errors.
+- Responses are generated correctly and are relevant to the prompts.

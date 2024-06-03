@@ -43,3 +43,22 @@ Compare results for same prompts for different models and with using different P
 ### Free practice:
 
 Modify the application to use the Semantic Kernel to generate images using Imagen model.
+
+### Evaluation Criteria
+
+1. CConfiguration for Different Models (30%)
+- Correctly modified the application.properties file to change the deployment name for different models.
+- Successfully retrieved deployment names using the provided API.
+
+2. Implementation of Model Switching (30%)
+- Correctly implemented the logic to switch between different models based on the deployment name.
+- Ensured that the application can call different models from the Dial service.
+
+3. Comparison of Results (30%)
+- Compared results for the same prompts using different models.
+- Compared results using different PromptExecutionSettings.
+- Documented observations and differences in the results.
+
+4. Functionality Testing (10%)
+- Application runs without errors.
+- Responses are generated correctly and are relevant to the prompts.
