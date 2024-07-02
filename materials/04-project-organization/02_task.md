@@ -56,9 +56,9 @@ Call the plugin with the next parameters:
 Output chat history and validate that it contains the uri to review cute kittens on vespas.
 ### Closing
 
-Create pull requests to the original repository and check that pipeline has passed.
+Create pull requests to your repository.
 
-Create a screenshot of the workflow showing the checks have passed and attach this screenshot to your tasks on learn.epam.com.
+Attach link to your PR to your tasks on learn.epam.com.
 
 ### Free practice:
 Review plugins code from official [Semantic Kernel repository](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Plugins), implement your own plugin and test it with your application.
