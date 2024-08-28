@@ -11,3 +11,4 @@
 🔗 [Hugging Face](https://huggingface.co/)  
 🔗 [Generate Images with Azure OpenAI Service](https://learn.microsoft.com/training/modules/generate-images-azure-openai)  
 🔗 [How to use Hugging Face Models with Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/how-to-use-hugging-face-models-with-semantic-kernel/)  
+🔗 [List of supported models by DIAL](https://docs.epam-rail.com/supported-models)  

@@ -1,7 +1,6 @@
 ## Difference between Semantic Kernel and Spring AI
 
 ### Semantic Kernel (Microsoft’s Implementation)
-
 **1. Concept and Purpose:**
 
 - **Semantic Kernel** in Microsoft’s implementation is a framework used to improve the performance of machine learning
@@ -28,7 +27,6 @@
   the data rather than just the statistical properties.
 
 ### Spring AI
-
 **1. Concept and Purpose:**
 
 - **Spring AI** is part of the Spring framework, tailored towards integrating artificial intelligence and machine
@@ -53,7 +51,6 @@
   leveraging the robust, scalable infrastructure of Spring.
 
 ### Key Differences
-
 - **Focus and Scope:**
     - **Semantic Kernel** specifically enhances the semantic processing capabilities of machine learning models,
       particularly for NLP tasks, through advanced kernel methods that improve the handling of sparse and

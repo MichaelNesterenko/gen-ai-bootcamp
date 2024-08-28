@@ -8,29 +8,21 @@
 ## 📑 Task
 
 ### Open "Lab4" Project
+For this task and for each subsequent task, use the results from the previous task as a basis for new changes.
 
-Open the "Lab4" project located in the  [`tasks/lab4` folder](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/tree/main/gen-ai-bootcamp/tasks/lab4/gen_ai_training) of your course materials. This project contains the initial setup required for this task, including the necessary project configuration and dependencies.
-
-### Configure the Application:
-
-You'll need to configure the application to use the Azure OpenAI chat completion service. You can do this by adding the following settings to the application.properties file:
-
-```yaml
-client-azureopenai-key: your-key
-client-azureopenai-endpoint: https:/your.ai-api.com/ 
-client-azureopenai-deployment-name: gpt-xx-turbo
-```
+#### Use the version of Semantic Kernel starting from 1.2 or higher
+Semantic Kernel as everything connected with AI rapidly evolves.
+It is important to use the latest version of the library to get experience and understand of latest tools.
 
 ### Call function from custom plugin:
-
 Review the custom plugin - AgeCalculatorPlugin code from the  [plugin](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/tree/main/gen-ai-bootcamp/tasks/lab4/gen_ai_training/src/main/java/com/epam/training/gen/ai/semantic/plugin) folder.
+Or use [this](https://devblogs.microsoft.com/semantic-kernel/using-semantic-kernel-to-create-a-time-plugin-with-java/) is an example
 
 Your task is to use the AgeCalculatorPlugin into the existing system. 
-Once integrated, the system should be able to calculate ages based on user-provided birth dates.
-Upon successful integration, the system should accurately calculate and display ages based on user-provided birth dates, enhancing its functionality.
+Once integrated, the system should be able to calculate ages based on user-provided birthdays.
+Upon successful integration, the system should accurately calculate and display ages based on user-provided birthdays, enhancing its functionality.
 
 ### Wikipedia Search URL Integration
-
 Your task is to integrate the `getWikipediaSearchUrl` function from the provided
 SearchUrlPlugin into the existing system. This function takes a search query
 as input and generates a URL for searching that query on Wikipedia. The
@@ -54,8 +46,8 @@ Call the plugin with the next parameters:
     { "query", "cute kittens on vespas" },
 ```
 Output chat history and validate that it contains the uri to review cute kittens on vespas.
-### Closing
 
+### Closing
 Create pull requests to your repository.
 
 Attach link to your PR to your tasks on learn.epam.com.
@@ -64,7 +56,6 @@ Attach link to your PR to your tasks on learn.epam.com.
 Review plugins code from official [Semantic Kernel repository](https://github.com/microsoft/semantic-kernel/tree/main/dotnet/src/Plugins), implement your own plugin and test it with your application.
 
 ### Evaluation Criteria
-
 1. Configuration for Azure OpenAI Chat Completion Service
 - Correctly modified the application.properties file to include the necessary settings for the Azure OpenAI chat completion service (10%)
 

@@ -1,6 +1,6 @@
 # 🍃 Introduction to Spring AI
 
-Spring AI is a relatively new Spring Project with current version 0.8.1. It is a collection of libraries and tools that
+Spring AI is a relatively new Spring Project with current version 1.0.0-M1. It is a collection of libraries and tools that
 help you integrate AI features within Spring Boot applications.
 
 Spring AI offers a comprehensive suite of features for Java developers integrating AI into their applications. It

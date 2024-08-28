@@ -48,10 +48,10 @@ git clone https://git.epam.com/epm-cdp/global-java-foundation-program/java-cours
 ```
 5. Your local clone will be created, allowing you to work on the project.
 
-
 ## Small hint
 
-==Some documention on Semantic Kernel can be outdated. Please use github repository as source of truth.  
-Source code of Semantic Kernel you can find [here](https://github.com/microsoft/semantic-kernel).  
+Some documentation on LLM Frameworks can be outdated. Please use github repository as source of truth.  
+Source code of Semantic Kernel you can find [here](https://github.com/microsoft/semantic-kernel).
+Source code of Spring AI you can find [here](https://github.com/spring-projects/spring-ai).
 Example of usage you can find in [samples in the same repository](https://github.com/microsoft/semantic-kernel/tree/main/samples).==
 

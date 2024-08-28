@@ -1,15 +1,16 @@
 # Vector Databases
 
 ## 📚 Learning Objectives
+- Understand what is an embedding
 - Understand how to store embeddings in a database.
 - Learn to use vector databases for storing embeddings.
-- Implement a simple application that builds and stores embeddings.
+- Implement a simple application that builds and stores embeddings in a database.
 
 ## 📑 Task
 
 ### Open "Lab5" Project
 
-Open the "Lab5" project located in the [`tasks/lab5` folder](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/tree/main/gen-ai-bootcamp/tasks/lab5) of your course materials. This project contains the initial setup required for this task, including the necessary project configuration and dependencies.
+For this task and for each subsequent task, use the results from the previous task as a basis for new changes.
 
 ### Configure the Application
 

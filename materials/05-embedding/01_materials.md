@@ -1,7 +1,7 @@
 # Vector Databases
 
 ## 📚 Learning Objectives
- - Understand what is a embedding
+ - Understand what is an embedding
  - Learn how to persist embeddings
  - Implement a simple application that stores embeddings in a database
  - Keywords: embedding, vector, distance.
