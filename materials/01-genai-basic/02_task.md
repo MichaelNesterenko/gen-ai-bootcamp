@@ -32,13 +32,16 @@ client-azureopenai-deployment-name: gpt-xx-turbo
 Semantic Kernel as everything connected with AI rapidly evolves.
 It is important to use the latest version of the library to get experience and understand of latest tools.
 
+### Get you DIAL key
+
+Use this [link](https://chat.lab.epam.com/#requestApiKey) to get your DIAL key.
+
 #### Create an example of usage ChatRequestFunctionMessage  as a context message associated with this chat completions request.  
 
 Validate the result and print it to the console.  
 
 ### Closing
-Create a pull request in your branch and check that the pipeline has passed.  
-
+Create a pull request in your branch and check that the pipeline has passed.
 
 ### Free practice:
 Modify the application to use the Semantic Kernel to generate a response to a user prompt.
