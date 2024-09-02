@@ -9,15 +9,13 @@
 ## 📑 Task
 
 ### Open "Lab5" Project
-
 For this task and for each subsequent task, use the results from the previous task as a basis for new changes.
 
 ### Configure the Application
-
-You need to configure the application to use a vector database for storing embeddings. You can use any vector database, such as `Postgres` with the `pgvector` plugin. Refer to the [Pgvector store autoconfiguration](https://github.com/spring-projects/spring-ai/blob/main/vector-stores/spring-ai-pgvector-store/src/main/java/org/springframework/ai/vectorstore/PgVectorStore.java) for guidance.
+You need to configure the application to use a vector database for storing embeddings. You can use any vector database, such as `Postgres` with the `pgvector` plugin. 
+Refer to the [Pgvector store autoconfiguration](https://github.com/spring-projects/spring-ai/blob/main/vector-stores/spring-ai-pgvector-store/src/main/java/org/springframework/ai/vectorstore/PgVectorStore.java) for guidance.
 
 ### Implement REST API Functionality
-
 Your task is to implement a REST API with the following functionality:
 
 1. **Build Embedding from Text**
@@ -38,13 +36,11 @@ Your task is to implement a REST API with the following functionality:
    - Attach a screenshot showing the search for the closest embeddings in the database to your task on learn.epam.com.
 
 ### Closing
-
 Create pull requests to the original repository and check that the pipeline has passed.
 
 Create a screenshot of the workflow showing the checks have passed and attach this screenshot to your tasks on learn.epam.com.
 
 ### Evaluation Criteria
-
 1. Configuration for Vector Database
 - Correctly configured the application to use a vector database (e.g., Postgres with pgvector plugin) (15%)
 
@@ -68,7 +64,6 @@ Create a screenshot of the workflow showing the checks have passed and attach th
 - Responses are generated correctly and are relevant to the prompts (5%)
 
 ## Self-Test Questions
-
 You can index and test your knowledge by answering the following questions:
 - What is embedding?
 - How does input with embedding differ from input in a text format?

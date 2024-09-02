@@ -27,7 +27,6 @@ public class SimplePromptService {
     }
 
     public List<String> getChatCompletions() {
-
         ChatCompletions completions = aiClientService.get()
                 .getChatCompletions(
                         deploymentOrModelName,
