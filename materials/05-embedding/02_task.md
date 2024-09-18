@@ -13,7 +13,7 @@ For this task and for each subsequent task, use the results from the previous ta
 
 ### Configure the Application
 You need to configure the application to use a vector database for storing embeddings. You can use any vector database, such as `Postgres` with the `pgvector` plugin. 
-Refer to the [Pgvector store autoconfiguration](https://github.com/spring-projects/spring-ai/blob/main/vector-stores/spring-ai-pgvector-store/src/main/java/org/springframework/ai/vectorstore/PgVectorStore.java) for guidance.
+Refer to the [Qdrant store autoconfiguration](https://github.com/qdrant/java-client?tab=readme-ov-file) for guidance. or you can use any other Vector DB, but we have example for it in _**examples**_ folder
 
 ### Implement REST API Functionality
 Your task is to implement a REST API with the following functionality:
@@ -21,17 +21,10 @@ Your task is to implement a REST API with the following functionality:
 1. **Build Embedding from Text**
    - Implement an endpoint to build an embedding from the provided text.
 
-2. **Build Embedding from PDF File**
-   - Implement an endpoint to build an embedding from the provided PDF file.
-
-3. **Build and Store Embedding from Text**
+2. **Build and Store Embedding from Text**
    - Implement an endpoint to build and store an embedding from the provided text.
 
-4. **Build and Store Embedding from PDF File**
-   - Implement an endpoint to build and store an embedding from the provided PDF file.
-   - Attach a screenshot showing the creation and storage of embeddings in the database to your task on learn.epam.com.
-
-5. **Search for Closest Embeddings**
+3. **Search for Closest Embeddings**
    - Implement an endpoint to search for the closest embeddings in the database based on the input text.
    - Attach a screenshot showing the search for the closest embeddings in the database to your task on learn.epam.com.
 
@@ -42,26 +35,20 @@ Create a screenshot of the workflow showing the checks have passed and attach th
 
 ### Evaluation Criteria
 1. Configuration for Vector Database
-- Correctly configured the application to use a vector database (e.g., Postgres with pgvector plugin) (15%)
+- Correctly configured the application to use a vector database (e.g., Qdrant with qdrant plugin or you can use any other Vector DB) (15%)
 
 2. Build Embedding from Text
 - Implemented an endpoint to build an embedding from the provided text (15%)
 
-3. Build Embedding from PDF File
-- Implemented an endpoint to build an embedding from the provided PDF file (15%)
-
-4. Build and Store Embedding from Text
+3. Build and Store Embedding from Text
 - Implemented an endpoint to build and store an embedding from the provided text (15%)
 
-5. Build and Store Embedding from PDF File
-- Implemented an endpoint to build and store an embedding from the provided PDF file (15%)
+5. Search for Closest Embeddings
+- Implemented an endpoint to search for the closest embeddings in the database based on the input text (25%)
 
-6. Search for Closest Embeddings
-- Implemented an endpoint to search for the closest embeddings in the database based on the input text (15%)
-
-7. Functionality Testing
-- Application runs without errors (5%)
-- Responses are generated correctly and are relevant to the prompts (5%)
+6. Functionality Testing
+- Application runs without errors (15%)
+- Responses are generated correctly and are relevant to the prompts (15%)
 
 ## Self-Test Questions
 You can index and test your knowledge by answering the following questions:

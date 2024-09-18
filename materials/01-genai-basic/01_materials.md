@@ -9,3 +9,4 @@
 🔗 [Coursera: Generative AI for Everyone](https://www.coursera.org/learn/generative-ai-for-everyone)  
 🔗 [Fundamentals of Generative AI](https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/)  
 🔗 [What is Semantic Kernel?](https://learn.microsoft.com/en-us/semantic-kernel/overview/)  
+🔗 [Chat completion](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
