@@ -6,7 +6,7 @@
 
 ## 📑 Task
 
-### Open "Lab4" Project
+### Use the tasks project from module 01
 For this task and for each subsequent task, use the results from the previous task as a basis for new changes.
 
 #### Use the version of Semantic Kernel starting from 1.2 or higher
@@ -14,7 +14,8 @@ Semantic Kernel as everything connected with AI rapidly evolves.
 It is important to use the latest version of the library to get experience and understand of latest tools.
 
 ### Call function from custom plugin:
-Use [this](https://devblogs.microsoft.com/semantic-kernel/using-semantic-kernel-to-create-a-time-plugin-with-java/) is an example or you can follow [Microsoft documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/?pivots=programming-language-java) and example from _**examples**_ folder
+- Use [this](https://devblogs.microsoft.com/semantic-kernel/using-semantic-kernel-to-create-a-time-plugin-with-java/) is an example or you can follow [Microsoft documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/?pivots=programming-language-java) 
+- See the **SimplePlugin.java** usage in the **examples** folder of the course project
 
 ### Implement custom plugin
 Your task is to create series of custom plugins the existing system.
@@ -22,6 +23,8 @@ This function should be called by a model based on user request, it can return s
 As ideas for plugins you can use:
 Age calculator, Weather forecast, Currency converter, Turn of the lamp (just change the flag of some boolean variable),
 and so on, in general, any plugin that can do some calculations or provide some information outside model knowledge.
+
+Note: no need to implement the real 3-rd party service integration, the response could be simply mocked.
 
 ### Closing
 Create pull requests to your repository.

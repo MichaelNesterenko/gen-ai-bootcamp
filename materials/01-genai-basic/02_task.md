@@ -7,8 +7,9 @@
 
 ## 📑 Task
 
-### Open "Lab1" Project
-Open the "Lab1" project located in the [`tasks/lab1` folder](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/tree/main/gen-ai-bootcamp/tasks/lab1/gen_ai_training) of your course materials. This project contains the initial setup required for this task, including the necessary project configuration and dependencies.
+### Create the tasks project
+Open the task code project located in the [`tasks/gen_ai_training` folder](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/tree/main/gen-ai-bootcamp/tasks/gen_ai_training) of your course materials. 
+This project contains the initial setup required for this task, including the necessary project configuration and dependencies.
 
 ### Get you DIAL key
 Use this [link](https://chat.lab.epam.com/#requestApiKey) to get your DIAL key.
@@ -32,9 +33,6 @@ client-azureopenai-deployment-name: gpt-xx-turbo
 #### Use the version of Semantic Kernel starting from 1.2 or higher
 Semantic Kernel as everything connected with AI rapidly evolves.
 It is important to use the latest version of the library to get experience and understand of latest tools.
-
-#### Create an example of usage ChatRequestFunctionMessage  as a context message associated with this chat completions request.
-Validate the result and print it to the console.  
 
 ### Closing
 Create a pull request in your branch and check that the pipeline has passed.

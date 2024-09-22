@@ -1,6 +1,7 @@
 # Semantic Kernel Plugins
 
 ## 📚 Learning Objectives
+- Understanding of function calls
 - Learn different types of SK plugins
 - Implement code that uses different types of SK plugins
 

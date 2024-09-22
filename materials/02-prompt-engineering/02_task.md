@@ -8,7 +8,7 @@
 
 ## 📑 Task 
 
-### Open "Lab2" Project
+### Use the tasks project from module 01
 For this task and for each subsequent task, use the results from the previous task as a basis for new changes.
 
 #### Use the version of Semantic Kernel starting from 1.2 or higher
