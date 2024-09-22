@@ -26,33 +26,25 @@ OpenJDK 17 or newer
 
 ## Request OpenAI Key
 
-## Clone this repository
+## Clone this Repository
 
-Cloning a repository allows you to freely experiment with changes locally without affecting the original project. Here is how you can clone the `gen-ai-bootcamp` repository from EPAM on GitHub .
+Cloning a repository allows you to freely experiment with changes locally without affecting the original project. 
+Here is how you can clone the `gen-ai-bootcamp` repository from EPAM on GitHub.
 
-### Step 1: Navigate to the Repository
+### Navigate to the Repository and Review Guidelines
 
-1. Open your web browser and go to the `gen-ai-bootcamp` Git Epam repository at [gen-ai-bootcamp](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/tree/main/gen-ai-bootcamp).
-
-### Step 2: Clone gen-ai-bootcamp
-
-If you wish to work on the project locally on your computer, you will need to clone the Repository.
-
-1. Click on the "Code" button with a download icon, then choose whether to clone using HTTPS, SSH, or GitHub CLI. Copy the URL provided.
-2. Open a terminal or command prompt on your computer.
-3. Navigate to the directory where you want to clone the repository.
-4. Type `git clone`, paste the URL you copied, and press Enter. For example:
-
-```
-git clone https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses.git
-```
-5. Your local clone will be created, allowing you to work on the project.
-
-## Small hint
-
-Some documentation on LLM Frameworks can be outdated. Please use github repository as source of truth.  
-Source code of Semantic Kernel you can find [here](https://github.com/microsoft/semantic-kernel).
-Source code of Spring AI you can find [here](https://github.com/spring-projects/spring-ai).
-Example of usage you can find in [samples in the same repository](https://github.com/microsoft/semantic-kernel/tree/main/prompt_template_samples).==
-Code quality rules for current training [here](materials/00-course-setup/Code_quality_rules_for_training.md)
 Git Repository Usage Guidelines [here](materials/00-course-setup/git.md)
+
+### Code quality rules
+Code quality rules for current training [here](materials/00-course-setup/Code_quality_rules_for_training.md)
+
+## Additional Information:
+
+### Training for Understanding AI:
+Required training for understanding AI [here](https://elearn.epam.com/courses/course-v1:EPAM+PomptEngBsc+0523/courseware/9310c47bebc04c82911832464b31fa81/ec06e305f19149a2a8444f49bae0c645/)
+
+### Documentation on LLM Frameworks:
+Some documentation on LLM frameworks can be outdated. Please use the GitHub repository as the source of truth.  
+Source code of Semantic Kernel is available [here](https://github.com/microsoft/semantic-kernel).  
+Source code of Spring AI is available [here](https://github.com/spring-projects/spring-ai).  
+Example of usage can be found in [samples in the same repository](https://github.com/microsoft/semantic-kernel/tree/main/prompt_template_samples).
