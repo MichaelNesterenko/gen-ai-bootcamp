@@ -1,64 +1,84 @@
 # Introduction to Generative AI and Large Language Models
 
 ## 📚 Learning Objectives
- - Understanding what Generative AI-based applications is and how Large Language Models (LLMs) work.
- - Learn which frameworks we have in Java and how they can be used
- - Implement a basic application that uses Semantic Kernel to generate text
+- Understand the principles of Generative AI-based applications and the functioning of Large Language Models (LLMs).
+- Explore Java frameworks supportive of AI and their applications.
+- Develop a simple application using Semantic Kernel to perform text generation.
 
-## 📑 Task
+## 📑 Tasks
 
-### Create the tasks project
-Open the task code project located in the [`tasks/gen_ai_training` folder](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/tree/main/gen-ai-bootcamp/tasks/gen_ai_training) of your course materials. 
-This project contains the initial setup required for this task, including the necessary project configuration and dependencies.
+### High-level tasks
+1. Set Up Project Environment (5%)
+2. Obtain DIAL Key (2%)
+3. Configuring the Application (13%)
+4. Implement Application Logic (50%)
+5. Final Integration and Submission (20%)
+6. Free Practice: Explore and Innovate (10%)
 
-### Get you DIAL key
-Use this [link](https://chat.lab.epam.com/#requestApiKey) to get your DIAL key.
+### Detailed steps
 
-### Configure the Application:
-You'll need to configure the [application](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/tree/main/gen-ai-bootcamp/tasks/lab1/gen_ai_training) to use the Azure OpenAI chat completion service. You can do this by adding the following settings to the [application.properties](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/blob/main/gen-ai-bootcamp/tasks/lab1/gen_ai_training/src/main/resources/config/application.properties) file:
+#### Task 1: Set Up Project Environment
+- Access and open the task code project located in the `tasks/gen_ai_training` folder provided in your course materials.
+- This includes project configurations and dependencies essential for your work.
 
-```yaml
-client-azureopenai-key: your-key
-client-azureopenai-endpoint: https:/your.ai-api.com/ 
-client-azureopenai-deployment-name: gpt-xx-turbo
-```
-  
-### Implement more complex code:
+  **Weight: 5%**
 
-#### Create a controller that will accept a prompt as a request parameter and return the response as a response body   
-```json
-{ "input": "I want to find top-10 books about world history" }
-```
+#### Task 2: Obtain DIAL Key
+- Utilize this link to secure your unique DIAL key which will be required for subsequent tasks.
 
-#### Use the version of Semantic Kernel starting from 1.2 or higher
-Semantic Kernel as everything connected with AI rapidly evolves.
-It is important to use the latest version of the library to get experience and understand of latest tools.
+  **Weight: 2%**
 
-### Closing
-Create a pull request in your branch and check that the pipeline has passed.
+#### Task 3: Configuring the Application
+- Edit the `application.properties` file to include the Azure OpenAI chat service settings:
 
-### Free practice:
-Modify the application to use the Semantic Kernel to generate a response to a user prompt.
-You can play with different prompts and see how the Semantic Kernel responds to them. 
-Also you can try to use different settings for OpenAI chat completion service and see how it affects the generated responses.
+  ```yaml
+  client-azureopenai-key: {YOUR_KEY}
+  client-azureopenai-endpoint: https://your.ai-api.com/
+  client-azureopenai-deployment-name: gpt-xx-turbo
+  ```
 
-### Evaluation Criteria
-1. Configuration of Application Properties
-- Correctly added Azure OpenAI settings to application.properties file (10%)
-- Values are placeholders and not hardcoded sensitive information (10%)
+    - Properly inject Azure OpenAI settings (**7%**).
+    - Ensure all sensitive information remains placeholders, not hardcoded (**6%**).
 
-2. Controller Implementation
-- Controller correctly accepts a prompt as a request parameter (15%)
-- Controller returns the response in the correct JSON format (10%)
+  **Total Weight: 13%**
 
-3. Usage of ChatRequestFunctionMessage
-- Correctly created an example of using ChatRequestFunctionMessage (10%)
-- Validated the result and printed it to the console (10%)
+#### Task 4: Implement Application Logic
+Develop a Controller:
+- Create a controller that takes a user prompt via a request parameter and returns the chat-bot response in JSON format.
 
-4. Semantic Kernel Integration
-- Modified the application to use the Semantic Kernel for generating responses (10%)
-- Demonstrated the ability to play with different prompts and settings(10%)
+  ```json
+  { "input": "I want to find top-10 books about world history" }
+  ```
 
-5. Functionality Testing
-- Application runs without errors (10%)
-- Responses are generated correctly and are relevant to the prompts (5%)
+- Correct receipt of the prompt as a request parameter (**20%**).
+- Accurate JSON formatted response containing the generated text (**20%**).
+
+**Integrate Semantic Kernel 1.2+**:
+- Ensure your application utilizes Semantic Kernel version 1.2 or above for generating responses.
+    - Integration and application of the Semantic Kernel in the project (**5%**).
+    - Effective usage of various prompts and settings leading to diverse responses (**5%**).
+
+  **Total Weight: 50%**
+
+#### Task 5: Final Integration and Submission
+**Testing and Submission**:
+- Ensure the application runs without errors and produces relevant responses (**15%**).
+- Create a pull request for your branch verifying that the pipeline tests are successfully passing and your changes are in compliance (**5%**).
+
+  **Total Weight: 20%**
+
+### Free Practice: Explore and Innovate (**10%**)
+**Experiment and Innovate**:
+- Modify and test different settings using the Semantic Kernel and Azure OpenAI's chat completion services to see their impact on response generation and application functionality.
+- Explore creative use of different prompts, and experiment with service settings to gauge variations in output.
+
+**Documentation**:
+- Document your findings and learnings from the experiments. Include examples of prompts and responses along with any quantifiable metrics or subjective assessments.
+
+**Tips for Effective Experimentation**:
+- Start Simple: Begin with clear, simple variations before moving to more complex alterations.
+- Document Iteratively: Keep notes as you go rather than trying to remember all details at the end.
+- Seek Patterns: Look for consistent trends or patterns that can inform best practices.
+- Be Creative: Don't shy away from unusual or creative prompts and settings—it's about exploring possibilities!
+
+  By following these guidelines and objectives, you can more effectively explore the capabilities and limitations of Generative AI technologies, enhancing your practical understanding and potentially innovative uses for these tools.

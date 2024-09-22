@@ -10,3 +10,4 @@
 🔗 [Fundamentals of Generative AI](https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/)  
 🔗 [What is Semantic Kernel?](https://learn.microsoft.com/en-us/semantic-kernel/overview/)  
 🔗 [Chat completion](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
+🔗 [Generative AI in Java:Breaking the Python Monopoly](https://wearecommunity.io/events/genai-in-java-world)
