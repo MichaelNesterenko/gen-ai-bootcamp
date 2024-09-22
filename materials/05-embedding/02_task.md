@@ -8,7 +8,7 @@
 
 ## 📑 Task
 
-### Open "Lab5" Project
+### Use the tasks project from module 01
 For this task and for each subsequent task, use the results from the previous task as a basis for new changes.
 
 ### Configure the Application

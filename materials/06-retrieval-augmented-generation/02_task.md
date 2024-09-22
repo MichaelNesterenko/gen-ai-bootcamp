@@ -5,8 +5,11 @@
 - Learn how to use embeddings with RAG
 
 ## 📑 Task
+
+### Use the tasks project from module 01
 For this task use the results from the previous task as a basis for new changes.
 
+### Goal
 You need to implement a simple application that uses RAG approach to generate text based on the knowledge source. 
 We do not impose any restrictions on the approach to application development. 
 You can write a console or web application, you can use any database, etc...
