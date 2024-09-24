@@ -103,6 +103,9 @@ Keep each class in its own Java file. Files should be named after the class they
 ## Code Review Guidelines
 Use PR reviews to enforce standards.
 
+## Where to find examples of code
+You can find example of code in `gen-ai-bootcamp/examples`.
+
 ## Tools and Environments
 Adopt tools like Checkstyle or SonarLint to enforce coding standards automatically. Configure IDEs to respect these formatting and style guidelines automatically.
 

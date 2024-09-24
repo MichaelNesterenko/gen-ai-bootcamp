@@ -9,6 +9,13 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * Service class for generating chat completions using Azure OpenAI.
+ * <p>
+ * This service interacts with the Azure OpenAI API to generate chat completions
+ * based on a static greeting message. It retrieves responses from the AI model
+ * and logs them.
+ */
 @Slf4j
 @Service
 public class SimplePromptService {
@@ -19,7 +26,7 @@ public class SimplePromptService {
     private final String deploymentOrModelName;
 
     public SimplePromptService(OpenAIAsyncClient aiAsyncClient,
-                               @Value("${client-azureopenai-deployment-name}")  String deploymentOrModelName) {
+                               @Value("${client-azureopenai-deployment-name}") String deploymentOrModelName) {
         this.aiAsyncClient = aiAsyncClient;
         this.deploymentOrModelName = deploymentOrModelName;
     }
