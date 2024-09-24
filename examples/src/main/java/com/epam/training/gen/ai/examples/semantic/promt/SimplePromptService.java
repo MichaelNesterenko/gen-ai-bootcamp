@@ -1,4 +1,4 @@
-package com.epam.training.gen.ai.semantic;
+package com.epam.training.gen.ai.examples.semantic.promt;
 
 import com.azure.ai.openai.OpenAIAsyncClient;
 import com.azure.ai.openai.models.ChatCompletionsOptions;

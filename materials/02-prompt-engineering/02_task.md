@@ -16,34 +16,19 @@ Semantic Kernel as everything connected with AI rapidly evolves.
 It is important to use the latest version of the library to get experience and understand of latest tools.
 
 ### Implement more complex code:
-Initialize PromptExecutionSettings and fill it with the following settings:
+Initialize PromptExecutionSettings and fill it with some settings, temperature for example.
 
-```
-put("gpt-xx-turbo", PromptExecutionSettings.builder()
-           .withMaxTokens(1_000)
-           .withTemperature(0d)
-           .build());
-```
-Try to increase the temperature value, what was changed?
+Try to play with the temperature value, what was changed?
 
 Get ChatCompletionService and initiate ChatHistory for storing all user and system messages to ChatHistory.
-
-```csharp
-ChatCompletionService chat = OpenAIChatCompletion.builder()
-            .withModelId(MODEL_ID)
-            .withOpenAIAsyncClient(client)
-            .build();
-
-ChatHistory history = new ChatHistory();
-history.addUserMessage"Hi, I'm looking for book suggestions");
-```
 
 Use ChatHistory to provide context about previous messages for a AI model.
 
 Validate the result and print it to the console.
 
 ### Closing
-Create a pull request in your branch and check that the pipeline has passed.  
+Create pull requests to your repository.
+Attach link to your PR to your tasks on learn.epam.com.
 
 ### Evaluation Criteria
 1. Prompt Execution Settings Initialization

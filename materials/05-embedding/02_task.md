@@ -29,9 +29,8 @@ Your task is to implement a REST API with the following functionality:
    - Attach a screenshot showing the search for the closest embeddings in the database to your task on learn.epam.com.
 
 ### Closing
-Create pull requests to the original repository and check that the pipeline has passed.
-
-Create a screenshot of the workflow showing the checks have passed and attach this screenshot to your tasks on learn.epam.com.
+Create pull requests to your repository.
+Attach link to your PR to your tasks on learn.epam.com.
 
 ### Evaluation Criteria
 1. Configuration for Vector Database

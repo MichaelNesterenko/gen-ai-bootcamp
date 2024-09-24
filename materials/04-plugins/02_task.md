@@ -28,7 +28,6 @@ Note: no need to implement the real 3-rd party service integration, the response
 
 ### Closing
 Create pull requests to your repository.
-
 Attach link to your PR to your tasks on learn.epam.com.
 
 ### Evaluation Criteria

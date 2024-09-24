@@ -29,6 +29,10 @@ Or by this [link](https://docs.epam-rail.com/supported-models)
 
 Compare results for same prompts for different models and with using different PromptExecutionSettings. More details about PromptExecutionSettings are in  "Lab2" in the [`materials/lab2` folder](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/tree/main/gen-ai-bootcamp/materials/02-promt-engineering)
 
+### Closing
+Create pull requests to your repository.
+Attach link to your PR to your tasks on learn.epam.com.
+
 ### Free practice:
 Modify the application to use the Semantic Kernel to generate images using Imagen model.
 
