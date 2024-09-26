@@ -4,6 +4,11 @@ import com.microsoft.semantickernel.semanticfunctions.annotations.DefineKernelFu
 import com.microsoft.semantickernel.semanticfunctions.annotations.KernelFunctionParameter;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * A simple plugin that defines a kernel function for performing a basic action on data.
+ * <p>
+ * This plugin exposes a method to be invoked by the kernel, which logs and returns the input query.
+ */
 @Slf4j
 public class SimplePlugin {
 

@@ -11,3 +11,6 @@
 🔗 [What is Semantic Kernel?](https://learn.microsoft.com/en-us/semantic-kernel/overview/)  
 🔗 [Chat completion](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
 🔗 [Generative AI in Java:Breaking the Python Monopoly](https://wearecommunity.io/events/genai-in-java-world)
+
+## Where to find examples of code
+You can find example of code in `gen-ai-bootcamp/examples`.

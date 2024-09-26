@@ -38,11 +38,6 @@ Git Repository Usage Guidelines [here](materials/00-course-setup/git.md)
 ### Code quality rules
 Code quality rules for current training [here](materials/00-course-setup/Code_quality_rules_for_training.md)
 
-## Additional Information:
-
-### Training for Understanding AI:
-Required training for understanding AI [here](https://elearn.epam.com/courses/course-v1:EPAM+PomptEngBsc+0523/courseware/9310c47bebc04c82911832464b31fa81/ec06e305f19149a2a8444f49bae0c645/)
-
 ### Documentation on LLM Frameworks:
 Some documentation on LLM frameworks can be outdated. Please use the GitHub repository as the source of truth.  
 Source code of Semantic Kernel is available [here](https://github.com/microsoft/semantic-kernel).  
