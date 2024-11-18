@@ -12,9 +12,10 @@
 🔗 [Chat completion](https://learn.microsoft.com/en-us/semantic-kernel/overview/)  
 🔗 [Generative AI in Java:Breaking the Python Monopoly](https://wearecommunity.io/events/genai-in-java-world)  
 
-## 📌 What is DIAL
-One of the main capabilities of dial is to provide universal api for various models (self-hosted in vllm, azure, google or whatever)
-and this interface is similar to azure openai interface, so we can use azure abstractions in frameworks. [read more](https://docs.epam-rail.com/architecture)
+
+## DIAL API Integration with Microsoft Semantic Kernel
+ - Overview: The DIAL API provides a universal interface for interacting with various LLMs (self-hosted or from providers like Azure, Google, or vLLM). It mirrors the Azure OpenAI API, enabling the use of Azure abstractions in frameworks like Microsoft Semantic Kernel (SK).
+ - Key Role: DIAL acts as a host or proxy for LLMs, simplifying integration and allowing frameworks like SK to streamline business logic around LLM calls efficiently.
 
 ## Where to find examples of code
 You can find example of code in `gen-ai-bootcamp/examples`.
