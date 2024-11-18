@@ -29,15 +29,15 @@
   **Weight: 2%**
 
 #### Task 3: Configuring the Application
-- Edit the `application.properties` file to include the Azure OpenAI chat service settings:
+- Edit the `application.properties` file to include the OpenAI chat service settings:
 
   ```yaml
-  client-azureopenai-key: {YOUR_KEY}
-  client-azureopenai-endpoint: https://your.ai-api.com/
-  client-azureopenai-deployment-name: gpt-xx-turbo
+  client-openai-key: {YOUR_KEY}
+  client-openai-endpoint: https://your.ai-api.com/
+  client-openai-deployment-name: gpt-xx-turbo
   ```
 
-    - Properly inject Azure OpenAI settings (**7%**).
+    - Properly inject OpenAI settings (**7%**).
     - Ensure all sensitive information remains placeholders, not hardcoded (**6%**).
 
   **Total Weight: 13%**
@@ -69,7 +69,7 @@ Develop a Controller:
 
 ### Free Practice: Explore and Innovate (**10%**)
 **Experiment and Innovate**:
-- Modify and test different settings using the Semantic Kernel and Azure OpenAI's chat completion services to see their impact on response generation and application functionality.
+- Modify and test different settings using the Semantic Kernel chat completion services to see their impact on response generation and application functionality.
 - Explore creative use of different prompts, and experiment with service settings to gauge variations in output.
 
 **Documentation**:
