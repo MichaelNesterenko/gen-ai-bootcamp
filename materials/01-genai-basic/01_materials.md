@@ -11,6 +11,8 @@
 🔗 [What is Semantic Kernel?](https://learn.microsoft.com/en-us/semantic-kernel/overview/)  
 🔗 [Chat completion](https://learn.microsoft.com/en-us/semantic-kernel/overview/)  
 🔗 [Generative AI in Java:Breaking the Python Monopoly](https://wearecommunity.io/events/genai-in-java-world)  
+
+## 📌 What is DIAL
 One of the main capabilities of dial is to provide universal api for various models (self-hosted in vllm, azure, google or whatever)
 and this interface is similar to azure openai interface, so we can use azure abstractions in frameworks. [read more](https://docs.epam-rail.com/architecture)
 
