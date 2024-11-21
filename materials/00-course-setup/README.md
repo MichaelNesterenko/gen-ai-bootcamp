@@ -36,7 +36,7 @@ Here is how you can clone the `gen-ai-bootcamp` repository from EPAM on GitHub.
 Git Repository Usage Guidelines [here](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/blob/main/gen-ai-bootcamp/materials/00-course-setup/git.md)
 
 ### Code quality rules
-Code quality rules for current training [here](materials/00-course-setup/Code_quality_rules_for_training.md)
+Code quality rules for current training [here](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/blob/main/gen-ai-bootcamp/materials/00-course-setup/Code_quality_rules_for_training.md)
 
 ### Documentation on LLM Frameworks:
 Some documentation on LLM frameworks can be outdated. Please use the GitHub repository as the source of truth.  
