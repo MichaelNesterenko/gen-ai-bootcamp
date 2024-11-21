@@ -33,7 +33,7 @@ Here is how you can clone the `gen-ai-bootcamp` repository from EPAM on GitHub.
 
 ### Navigate to the Repository and Review Guidelines
 
-Git Repository Usage Guidelines [here](materials/00-course-setup/git.md)
+Git Repository Usage Guidelines [here](https://git.epam.com/epm-cdp/global-java-foundation-program/java-courses/-/blob/main/gen-ai-bootcamp/materials/00-course-setup/git.md)
 
 ### Code quality rules
 Code quality rules for current training [here](materials/00-course-setup/Code_quality_rules_for_training.md)
