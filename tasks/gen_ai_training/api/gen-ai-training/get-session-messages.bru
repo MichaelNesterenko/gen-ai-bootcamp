@@ -1,0 +1,15 @@
+meta {
+  name: get-session-messages
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/chat/:id/history
+  body: none
+  auth: none
+}
+
+params:path {
+  id: 0
+}
