@@ -1,0 +1,21 @@
+meta {
+  name: submit-chat-message
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/chat/:id/message
+  body: json
+  auth: none
+}
+
+params:path {
+  id: 0
+}
+
+body:json {
+  {
+    "message": "please say any three letter word"
+  }
+}
