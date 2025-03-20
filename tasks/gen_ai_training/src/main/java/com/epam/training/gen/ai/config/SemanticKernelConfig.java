@@ -44,6 +44,7 @@ public class SemanticKernelConfig {
             .withReturnMode(InvocationReturnMode.LAST_MESSAGE_ONLY)
             .withPromptExecutionSettings(PromptExecutionSettings.builder()
                 .withTemperature(1.0)
+                .withMaxTokens(4096)
                 .build())
             .build();
     }
