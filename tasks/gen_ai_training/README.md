@@ -10,3 +10,9 @@ API requests are contained in bruno collection in api folder:
 ```bash
 ./mvnw clean package
 ```
+
+# Running
+
+```bash
+client_openai_key='<your-key>' ./mvnw spring-boot:run
+```
