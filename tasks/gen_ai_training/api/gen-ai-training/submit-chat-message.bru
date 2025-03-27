@@ -5,13 +5,14 @@ meta {
 }
 
 post {
-  url: http://localhost:8080/chat/:id/message
+  url: http://localhost:8080/chat/:modelId/:chatId/message
   body: json
   auth: none
 }
 
 params:path {
-  id: 0
+  chatId: 0
+  modelId: gpt-35-turbo
 }
 
 body:json {

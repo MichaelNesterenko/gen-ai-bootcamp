@@ -1,4 +1,4 @@
-package com.epam.training.gen.ai.config;
+package com.epam.training.gen.ai.support.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -7,12 +7,9 @@ import org.springframework.context.annotation.Configuration;
 import com.azure.ai.openai.OpenAIAsyncClient;
 import com.azure.ai.openai.OpenAIClientBuilder;
 import com.azure.core.credential.AzureKeyCredential;
-import com.microsoft.semantickernel.Kernel;
-import com.microsoft.semantickernel.aiservices.openai.chatcompletion.OpenAIChatCompletion;
 import com.microsoft.semantickernel.orchestration.InvocationContext;
 import com.microsoft.semantickernel.orchestration.InvocationReturnMode;
 import com.microsoft.semantickernel.orchestration.PromptExecutionSettings;
-import com.microsoft.semantickernel.services.chatcompletion.ChatCompletionService;
 
 @Configuration
 public class SemanticKernelConfig {
@@ -22,21 +19,6 @@ public class SemanticKernelConfig {
                 .credential(new AzureKeyCredential(credential))
                 .endpoint(endpoint)
                 .buildAsyncClient();
-    }
-
-    @Bean ChatCompletionService chatCompletionService(
-        @Value("${client-openai-deployment-name}") String deploymentOrModelName, OpenAIAsyncClient openAIAsyncClient
-    ) {
-        return OpenAIChatCompletion.builder()
-                .withModelId(deploymentOrModelName)
-                .withOpenAIAsyncClient(openAIAsyncClient)
-                .build();
-    }
-
-    @Bean Kernel kernel(ChatCompletionService chatCompletionService) {
-        return Kernel.builder()
-                .withAIService(ChatCompletionService.class, chatCompletionService)
-                .build();
     }
 
     @Bean InvocationContext invocationContext() {
