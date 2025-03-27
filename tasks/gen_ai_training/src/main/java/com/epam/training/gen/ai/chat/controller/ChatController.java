@@ -19,9 +19,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.microsoft.semantickernel.Kernel;
+import com.epam.training.gen.ai.support.service.ChatCompletionServiceProvider;
 import com.microsoft.semantickernel.orchestration.InvocationContext;
-import com.microsoft.semantickernel.services.chatcompletion.ChatCompletionService;
 import com.microsoft.semantickernel.services.chatcompletion.ChatHistory;
 import com.microsoft.semantickernel.services.chatcompletion.ChatMessageContent;
 
@@ -31,9 +30,9 @@ import lombok.Data;
 @RestController
 public class ChatController {
     
-    @Resource ChatCompletionService chatCompletionService;
-    @Resource Kernel semanticKernel;
     @Resource InvocationContext semanticContext;
+
+    @Resource ChatCompletionServiceProvider chatServiceProvider;
 
     final AtomicInteger sessionCounter = new AtomicInteger();
     final ConcurrentMap<Integer, ChatHistory> chatSession = new ConcurrentHashMap<>();
@@ -46,12 +45,16 @@ public class ChatController {
         return tap(new ChatSessionMessage(), session -> session.setId(chatId));
     }
     
-    @PostMapping("/chat/{id}/message") ResponseEntity<Object> newChatMessage(@PathVariable int id, @RequestBody ConversationInputMessage input) {
+    @PostMapping("/chat/{modelId}/{chatId}/message") ResponseEntity<Object> newChatMessage(
+        @PathVariable String modelId,
+        @PathVariable int chatId,
+        @RequestBody ConversationInputMessage input
+    ) {
         return asChatSessionInteractionResponse(
-            withChatSessionLock(id, chatSession -> {
+            withChatSessionLock(chatId, chatSession -> {
                 chatSession.addUserMessage(input.getMessage());
 
-                var response = chatCompletionService.getChatMessageContentsAsync(chatSession, semanticKernel, semanticContext).block();
+                var response = chatServiceProvider.getChatCompletionService(modelId).getChatMessageContentsAsync(chatSession, null, semanticContext).block();
                 response.forEach(chatSession::addMessage);
 
                 return tap(
