@@ -5,6 +5,7 @@ API requests are contained in bruno collection in api folder:
 * submit-chat-message - to submit a new message to a model
 * get-session-messages - to retrieve conversation log
 * support-vailable-models - to list all available models
+* support-weather - to get weather information
 
 # Compiling
 
@@ -15,5 +16,5 @@ API requests are contained in bruno collection in api folder:
 # Running
 
 ```bash
-client_openai_key='<your-key>' ./mvnw spring-boot:run
+client_openai_key='<your-key>' weather_api_key='<your-key-from-weatherapi.com>' ./mvnw spring-boot:run
 ```

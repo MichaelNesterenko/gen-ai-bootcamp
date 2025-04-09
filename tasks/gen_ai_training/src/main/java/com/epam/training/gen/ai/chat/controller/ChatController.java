@@ -6,7 +6,6 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -19,20 +18,25 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.epam.training.gen.ai.support.service.ChatCompletionServiceProvider;
+import com.microsoft.semantickernel.Kernel;
 import com.microsoft.semantickernel.orchestration.InvocationContext;
+import com.microsoft.semantickernel.services.chatcompletion.ChatCompletionService;
 import com.microsoft.semantickernel.services.chatcompletion.ChatHistory;
 import com.microsoft.semantickernel.services.chatcompletion.ChatMessageContent;
 
 import jakarta.annotation.Resource;
 import lombok.Data;
 
+import static com.epam.training.gen.ai.util.Util.CheckedFunction;
+import static com.epam.training.gen.ai.util.Util.tap;
+import static com.epam.training.gen.ai.util.Util.asUnchecked;;
+
 @RestController
 public class ChatController {
     
     @Resource InvocationContext semanticContext;
 
-    @Resource ChatCompletionServiceProvider chatServiceProvider;
+    @Resource Function<String, Kernel> semanticKernelProivder;
 
     final AtomicInteger sessionCounter = new AtomicInteger();
     final ConcurrentMap<Integer, ChatHistory> chatSession = new ConcurrentHashMap<>();
@@ -54,7 +58,10 @@ public class ChatController {
             withChatSessionLock(chatId, chatSession -> {
                 chatSession.addUserMessage(input.getMessage());
 
-                var response = chatServiceProvider.getChatCompletionService(modelId).getChatMessageContentsAsync(chatSession, null, semanticContext).block();
+                var kernel = semanticKernelProivder.apply(modelId);
+                var response = kernel.getService(ChatCompletionService.class)
+                    .getChatMessageContentsAsync(chatSession, kernel, semanticContext)
+                    .block();
                 response.forEach(chatSession::addMessage);
 
                 return tap(
@@ -92,11 +99,11 @@ public class ChatController {
     }
 
     @SuppressWarnings("unchecked")
-    private <T> Optional<T> withChatSessionLock(int id, Function<ChatHistory, T> action) {
+    private <T> Optional<T> withChatSessionLock(int id, CheckedFunction<ChatHistory, T> action) {
         var response = new Object[1];
 
         chatSession.compute(id, ($, chatSession) -> {
-            response[0] = Optional.ofNullable(chatSession).map(action);
+            response[0] = Optional.ofNullable(chatSession).map(asUnchecked(action));
             return chatSession;
         });
 
@@ -126,11 +133,6 @@ public class ChatController {
 
     @Data static class ErrorMessage {
         String message;
-    }
-
-    static <T> T tap(T value, Consumer<T> tapper) {
-        tapper.accept(value);
-        return value;
     }
 
 }
