@@ -1,0 +1,15 @@
+meta {
+  name: support-weather
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:8080/support/weather/current?location=London
+  body: none
+  auth: none
+}
+
+params:query {
+  location: London
+}
