@@ -1,0 +1,15 @@
+meta {
+  name: embedding-store
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{service_base_url}}/embedding/store
+  body: text
+  auth: none
+}
+
+body:text {
+  some text about cats
+}

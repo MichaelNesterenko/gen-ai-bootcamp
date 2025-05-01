@@ -6,6 +6,9 @@ API requests are contained in bruno collection in api folder:
 * get-session-messages - to retrieve conversation log
 * support-vailable-models - to list all available models
 * support-weather - to get weather information
+* embedding-generat - to generate an embedding using llm model
+* embedding-store - to store embedding in the local postgresql database
+* embedding-search. - to search for data using an embedding
 
 # Compiling
 

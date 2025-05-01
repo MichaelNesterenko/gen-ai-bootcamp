@@ -1,0 +1,15 @@
+meta {
+  name: embedding-generate
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{service_base_url}}/embedding/generate
+  body: text
+  auth: none
+}
+
+body:text {
+  this is some text here
+}

@@ -41,11 +41,6 @@ public class SemanticKernelConfig {
     }
 
     @Bean InvocationContext invocationContext(ObjectMapper objectMapper) {
-        ContextVariableTypes.addGlobalConverter(
-            ContextVariableTypeConverter.builder(CurrentWeatherResponse.class)
-                .toPromptString(asUnchecked(objectMapper::writeValueAsString))
-                .build()
-        );
         return InvocationContext.builder()
             .withReturnMode(InvocationReturnMode.LAST_MESSAGE_ONLY)
             .withToolCallBehavior(ToolCallBehavior.allowAllKernelFunctions(true))
