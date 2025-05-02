@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -32,6 +33,7 @@ import static com.epam.training.gen.ai.util.Util.tap;
 import static com.epam.training.gen.ai.util.Util.asUnchecked;;
 
 @RestController
+@RequestMapping("/chat")
 public class ChatController {
     
     @Resource InvocationContext semanticContext;
@@ -41,7 +43,7 @@ public class ChatController {
     final AtomicInteger sessionCounter = new AtomicInteger();
     final ConcurrentMap<Integer, ChatHistory> chatSession = new ConcurrentHashMap<>();
 
-    @PostMapping("/chat") @ResponseStatus(code = HttpStatus.CREATED) ChatSessionMessage newChatSession() {
+    @PostMapping @ResponseStatus(code = HttpStatus.CREATED) ChatSessionMessage newChatSession() {
         var chatId = sessionCounter.getAndIncrement();
 
         chatSession.put(chatId, new ChatHistory());
@@ -49,7 +51,7 @@ public class ChatController {
         return tap(new ChatSessionMessage(), session -> session.setId(chatId));
     }
     
-    @PostMapping("/chat/{modelId}/{chatId}/message") ResponseEntity<Object> newChatMessage(
+    @PostMapping("/{modelId}/{chatId}/message") ResponseEntity<Object> newChatMessage(
         @PathVariable String modelId,
         @PathVariable int chatId,
         @RequestBody ConversationInputMessage input
@@ -76,7 +78,7 @@ public class ChatController {
         );
     }
 
-    @GetMapping("/chat/{id}/history") ResponseEntity<Object> retrieveChatSession(@PathVariable int id) {
+    @GetMapping("/{id}/history") ResponseEntity<Object> retrieveChatSession(@PathVariable int id) {
         return asChatSessionInteractionResponse(
             withChatSessionLock(id, chatSession -> tap(new ChatSessionMessage(), message -> {
                 message.setId(id);

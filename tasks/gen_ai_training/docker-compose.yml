@@ -1,11 +1,10 @@
-version: '3.7'
 services:
-  qdrant:
-    image: qdrant/qdrant:latest
-    container_name: qdrant_container
-    ports:
-      - "6333:6333"
-      - "6334:6334"
-    volumes:
-      - ./qdrant_storage:/qdrant/storage:z
-    restart: unless-stopped
+  app:
+    image: gen_ai_training:0.0.1-SNAPSHOT
+    env_file: .env
+  postgres:
+    build: infra/postgres
+    environment:
+      POSTGRES_PASSWORD: semantic-kernel
+  shell:
+    build: infra/shell

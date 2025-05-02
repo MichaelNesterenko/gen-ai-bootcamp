@@ -1,0 +1,15 @@
+meta {
+  name: embedding-search
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{service_base_url}}/embedding/search
+  body: text
+  auth: none
+}
+
+body:text {
+  some text about cats
+}
