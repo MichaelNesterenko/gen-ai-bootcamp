@@ -2,6 +2,8 @@ services:
   app:
     image: gen_ai_training:0.0.1-SNAPSHOT
     env_file: .env
+    environment:
+      _JAVA_OPTIONS: "${_JAVA_OPTIONS}"
   postgres:
     build: infra/postgres
     environment:

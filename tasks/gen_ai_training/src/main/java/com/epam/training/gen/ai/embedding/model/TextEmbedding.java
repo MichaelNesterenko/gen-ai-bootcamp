@@ -2,6 +2,7 @@ package com.epam.training.gen.ai.embedding.model;
 
 import java.util.List;
 
+import com.microsoft.semantickernel.data.textsearch.TextSearchResultValue;
 import com.microsoft.semantickernel.data.vectorstorage.annotations.VectorStoreRecordData;
 import com.microsoft.semantickernel.data.vectorstorage.annotations.VectorStoreRecordKey;
 import com.microsoft.semantickernel.data.vectorstorage.annotations.VectorStoreRecordVector;
@@ -15,7 +16,7 @@ public class TextEmbedding {
     @VectorStoreRecordKey
     String key;
 
-    @VectorStoreRecordData(isFullTextSearchable = true)
+    @VectorStoreRecordData(isFullTextSearchable = true) @TextSearchResultValue
     String payload;
 
     @VectorStoreRecordVector(dimensions = 1536, distanceFunction = DistanceFunction.COSINE_DISTANCE, indexKind = IndexKind.HNSW)

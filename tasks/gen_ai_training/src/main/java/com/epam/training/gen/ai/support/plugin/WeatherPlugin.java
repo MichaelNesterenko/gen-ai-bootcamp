@@ -17,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 import static com.epam.training.gen.ai.util.Util.tap;
 
 @Service @Slf4j
-public class WeatherPlugin implements SemanticPLugin {
+public class WeatherPlugin implements SemanticPlugin {
 
     @Resource WeatherService weatherService;
 

@@ -1,3 +1,3 @@
 package com.epam.training.gen.ai.support.plugin;
 
-public interface SemanticPLugin { }
+public interface SemanticPlugin { }

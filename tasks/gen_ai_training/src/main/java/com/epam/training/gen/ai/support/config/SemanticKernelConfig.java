@@ -1,7 +1,5 @@
 package com.epam.training.gen.ai.support.config;
 
-import static com.epam.training.gen.ai.util.Util.asUnchecked;
-
 import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -14,13 +12,10 @@ import org.springframework.context.annotation.Configuration;
 import com.azure.ai.openai.OpenAIAsyncClient;
 import com.azure.ai.openai.OpenAIClientBuilder;
 import com.azure.core.credential.AzureKeyCredential;
-import com.epam.training.gen.ai.support.plugin.SemanticPLugin;
-import com.epam.training.gen.ai.support.plugin.WeatherPlugin.CurrentWeatherResponse;
+import com.epam.training.gen.ai.support.plugin.SemanticPlugin;
 import com.epam.training.gen.ai.util.Util;
 import com.microsoft.semantickernel.Kernel;
 import com.microsoft.semantickernel.aiservices.openai.chatcompletion.OpenAIChatCompletion;
-import com.microsoft.semantickernel.contextvariables.ContextVariableTypeConverter;
-import com.microsoft.semantickernel.contextvariables.ContextVariableTypes;
 import com.microsoft.semantickernel.orchestration.InvocationContext;
 import com.microsoft.semantickernel.orchestration.InvocationReturnMode;
 import com.microsoft.semantickernel.orchestration.PromptExecutionSettings;
@@ -51,7 +46,7 @@ public class SemanticKernelConfig {
             .build();
     }
 
-    @Bean Function<String, Kernel> semanticKernelProivder(OpenAIAsyncClient openAIAsyncClient, Collection<SemanticPLugin> plugins) {
+    @Bean Function<String, Kernel> semanticKernelProivder(OpenAIAsyncClient openAIAsyncClient, Collection<SemanticPlugin> plugins) {
         Map<String, Kernel> modelSpecificChatCompletionServices = new ConcurrentHashMap<>();
         var kernelPlugins = plugins.stream()
             .map(p -> KernelPluginFactory.createFromObject(p, p.getClass().getSimpleName()))
