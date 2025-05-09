@@ -1,0 +1,22 @@
+meta {
+  name: submit-chat-message-weather
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{service_base_url}}/chat/:modelId/:chatId/message
+  body: json
+  auth: none
+}
+
+params:path {
+  chatId: 0
+  modelId: gpt-4
+}
+
+body:json {
+  {
+    "message": "tell me what current weather is in london"
+  }
+}
